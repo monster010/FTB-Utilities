@@ -19,7 +19,6 @@ import com.feed_the_beast.ftbutilities.data.ClaimedChunks;
 import com.feed_the_beast.ftbutilities.data.FTBUtilitiesPlayerData;
 import com.feed_the_beast.ftbutilities.data.FTBUtilitiesUniverseData;
 import com.feed_the_beast.ftbutilities.net.MessageUpdatePlayTime;
-import com.feed_the_beast.ftbutilities.net.MessageUpdateTabName;
 import com.feed_the_beast.ftbutilities.ranks.Ranks;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.stats.StatList;
@@ -225,7 +224,6 @@ public class FTBUtilitiesServerEventHandler
 						}
 
 						FTBUtilities.LOGGER.info(player.getName() + (isAFK ? " is now AFK" : " is no longer AFK"));
-						new MessageUpdateTabName(player).sendToAll();
 					}
 
 					if (playerToKickForAfk == null)

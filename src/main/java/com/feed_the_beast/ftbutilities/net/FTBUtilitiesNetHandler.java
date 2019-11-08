@@ -13,7 +13,6 @@ public class FTBUtilitiesNetHandler
 	{
 		GENERAL.register(new MessageRequestBadge());
 		GENERAL.register(new MessageSendBadge());
-		GENERAL.register(new MessageUpdateTabName());
 		GENERAL.register(new MessageUpdatePlayTime());
 
 		CLAIMS.register(new MessageClaimedChunksRequest());

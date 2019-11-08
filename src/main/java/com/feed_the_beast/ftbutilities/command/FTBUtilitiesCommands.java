@@ -129,12 +129,6 @@ public class FTBUtilitiesCommands
 			event.registerServerCommand(new CmdTPAccept());
 		}
 
-		if (FTBUtilitiesConfig.commands.nick)
-		{
-			event.registerServerCommand(new CmdNick());
-			event.registerServerCommand(new CmdNickFor());
-		}
-
 		if (FTBUtilitiesConfig.commands.mute)
 		{
 			event.registerServerCommand(new CmdMute());
@@ -149,11 +143,6 @@ public class FTBUtilitiesCommands
 		if (FTBUtilitiesConfig.commands.god)
 		{
 			event.registerServerCommand(new CmdGod());
-		}
-
-		if (FTBUtilitiesConfig.commands.rec)
-		{
-			event.registerServerCommand(new CmdRec());
 		}
 	}
 }

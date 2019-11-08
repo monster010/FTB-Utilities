@@ -18,7 +18,6 @@ import com.feed_the_beast.ftbutilities.FTBUtilitiesPermissions;
 import com.feed_the_beast.ftbutilities.data.ClaimedChunks;
 import com.feed_the_beast.ftbutilities.data.FTBUtilitiesPlayerData;
 import com.feed_the_beast.ftbutilities.data.FTBUtilitiesUniverseData;
-import com.feed_the_beast.ftbutilities.net.MessageUpdateTabName;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -80,16 +79,6 @@ public class FTBUtilitiesPlayerEventHandler
 		if (ClaimedChunks.isActive())
 		{
 			ClaimedChunks.instance.markDirty();
-		}
-
-		new MessageUpdateTabName(player).sendToAll();
-
-		for (EntityPlayerMP player1 : player.server.getPlayerList().getPlayers())
-		{
-			if (player1 != player)
-			{
-				new MessageUpdateTabName(player1).sendTo(player);
-			}
 		}
 	}
 
