@@ -129,7 +129,6 @@ public class FTBUtilitiesConfig
 		public boolean mute = true;
 		public boolean rtp = true;
 		public boolean god = true;
-		public boolean rec = true;
 	}
 
 	public static class Login
